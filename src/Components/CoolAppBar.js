@@ -12,9 +12,10 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
+import { Divider } from "@mui/material";
 
 const pages = ["Как все работает", "Помощь", "Шаблоны", "О нас"];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
+const settings = ["Мой профиль", "Мои заказы", "Выйти"];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -119,12 +120,12 @@ function ResponsiveAppBar() {
             INHOLIDAY
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" }}}>
+          <Box sx={{ marginLeft: 4, flexGrow: 1, display: { xs: "none", md: "flex" }}}>
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{ marginLeft: 4, my: 2, color: "white", display: "block" }}
               >
                 {page}
               </Button>
