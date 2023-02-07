@@ -6,6 +6,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import React from 'react';
 import { Menu } from '@mui/icons-material';
 
+
 const pages = ["Products", "Pricing", "Blog"];
 
 function App() {
