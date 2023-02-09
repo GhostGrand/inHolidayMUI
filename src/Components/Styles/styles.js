@@ -9,11 +9,12 @@ export const mainPageStyles = {
     textAlign: 'left'
   },
   gridImage: {
-    display: { xs: 'none', md: 'block' },
-    width: '100vw',
-    left: '49%',
-    transform: 'translateX(-48.8%)',
-    position: 'relative'
+    display: { xs: 'none', md: 'flex' }
+  },
+  gridImageSec: {
+    display: { xs: 'flex', md: 'none' },
+    
+
   }
 }
 

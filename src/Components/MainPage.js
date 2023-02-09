@@ -10,7 +10,7 @@ export default function MainPage() {
 
   return (
     <Container sx={mainPageStyles.container}>
-      <Box sx={mainPageStyles.container}>
+      <Box  sx={mainPageStyles.container}>
         <Grid container spacing={2} alignItems="center">
           <Grid item xs={6} md={4}>
             <Typography variant="h4" sx={mainPageStyles.typography}>
@@ -18,8 +18,11 @@ export default function MainPage() {
             </Typography>
           </Grid>
           <Grid item xs={6} md={8} sx={mainPageStyles.gridImage}>
-            <img src={require('./Content/sales.png')} alt="Sale" style={{ maxWidth: '100%', maxHeight: '100%' }} />
+            <img src={require('./Content/sales.png')} alt="Sale" style={{position: '',  maxWidth: '100%'}} />
           </Grid>
+          <Box sx={mainPageStyles.gridImageSec}>
+            <img src={require('./Content/sales.png')} alt="Sale" style={{maxWidth: '100%'}} />
+          </Box>
         </Grid>
       </Box>
     </Container>
