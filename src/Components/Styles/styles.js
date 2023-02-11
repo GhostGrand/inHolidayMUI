@@ -1,7 +1,9 @@
 // Styles/styles.js
 export const mainPageStyles = {
   container: {
-    flexGrow: 1
+    flexGrow: 1,
+    position: 'relative'
+    
   },
   typography: {
     // paddingTop: 8,
@@ -13,9 +15,12 @@ export const mainPageStyles = {
   },
   gridImageSec: {
     display: { xs: 'flex', md: 'none' },
-    
+  },
+
+  containerImage: {
 
   }
+  
 }
 
 
