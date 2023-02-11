@@ -17,8 +17,11 @@ export default function MainPage() {
 
   return (
     <Container sx={mainPageStyles.container} maxWidth="xl" disableGutters>
-      <img src={require('./Content/salesnew2.png')} alt="Sale" style={{width: '100%', objectFit:'cover'}}></img>
-      <div style={{position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', color: 'white',}}>
+      <img src={require('./Content/salesnew4.png')} alt="Sale" style={{
+        width: '100%', 
+        objectFit:'cover',
+        transform: `translateY(${-(offsetY * 0.2)}px)`
+        }}></img><div style={{position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', color: 'white',}}>
       <Typography variant="h3" sx={mainPageStyles.typography}>Лучшие приглашения для лучших клиентов!</Typography>
       <Typography variant="h6" sx={mainPageStyles.typography2}>Лучшие приглашения для лучших клиентов!</Typography>
 
