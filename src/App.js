@@ -18,7 +18,7 @@ function App() {
       <div className="App"> 
       <CoolAppBar></CoolAppBar>
       <Routes>
-        <Route path="/" element={<MainPage/>}/>
+        <Route path="/inHolidayMUI" element={<MainPage/>}/>
       </Routes>
       </div>
      </Router>

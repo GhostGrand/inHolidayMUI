@@ -19,7 +19,10 @@ export default function MainPage() {
     <Container sx={mainPageStyles.container} maxWidth="xl" disableGutters>
       <img src={require('./Content/salesnew2.png')} alt="Sale" style={{width: '100%', objectFit:'cover'}}></img>
       <div style={{position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', color: 'white',}}>
-      <Typography variant='h2'>Скидка 20% на индивидуальный заказ!</Typography>
+      <Typography variant="h3" sx={mainPageStyles.typography}>Лучшие приглашения для лучших клиентов!</Typography>
+      <Typography variant="h6" sx={mainPageStyles.typography2}>Лучшие приглашения для лучших клиентов!</Typography>
+
+      {/* <Typography variant='h2' sx={{flexGrow:1, display: { xs: "flex", md: "flex" }}}>Скидка 20% на индивидуальный заказ!</Typography> */}
     </div>
       {/* <Box  sx={mainPageStyles.container}> */}
         {/* <Grid container spacing={2} alignItems="center">
